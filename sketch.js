@@ -3,20 +3,18 @@ const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 
-var maxDrops = 100;
-
 function preload(){
-
-var umbrella = new Umbrella(400,300,50,50);
 
 }
 
 function setup(){
     createCanvas(400,800);
-    engine = Engine.create();
-    world = engine.world;
-    
-    
+    Engine = Engine.create();
+    World = Engine.world;
+
+    var umbrella = new Umbrella(400,300,50,50);
+    var maxDrops = 100;
+
 }
 
 function draw(){
